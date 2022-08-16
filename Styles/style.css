@@ -290,6 +290,21 @@ ol li a {
   align-items: center;
   padding: 2.5rem 2rem;
 }
+.close {
+  pointer-events: all;
+  position: absolute;
+  right: 1.72rem;
+  top: 1rem;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
 input,
 textarea {
   pointer-events: all;
