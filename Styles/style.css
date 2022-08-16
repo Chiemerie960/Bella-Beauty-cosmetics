@@ -68,6 +68,7 @@ nav h3 {
   font-size: 1rem;
   font-weight: 600;
   font-variant: small-caps;
+  cursor: pointer;
 }
 
 .hamburger {
