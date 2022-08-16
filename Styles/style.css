@@ -18,11 +18,13 @@ li {
 a {
   text-decoration: none;
 }
+
 header {
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
 nav {
   display: flex;
   flex-direction: column;
@@ -40,6 +42,7 @@ nav {
   color: white;
   height: 1.2rem;
 }
+
 .topnav h6 {
   letter-spacing: 1px;
 }
@@ -74,6 +77,7 @@ nav h3 {
 .hamburger {
   display: none;
 }
+
 /*********************************
  *       landing section         *
  *********************************/
@@ -84,12 +88,14 @@ nav h3 {
   height: inherit;
   overflow: hidden;
 }
+
 .landing img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
+
 .landing .landing-txt {
   position: absolute;
   top: 50%;
@@ -100,18 +106,21 @@ nav h3 {
   border: 1px solid white;
   padding: 2rem 0rem;
 }
+
 .landing-txt h2 {
   font-size: 3rem;
   font-variant: small-caps;
   opacity: .7;
 }
+
 .landing-txt p {
   font-variant: small-caps;
   letter-spacing: 1px;
 }
+
 /***********************************************
 *               Second Section                 *
-************************************************/ 
+************************************************/
 section.about {
   display: flex;
   justify-content: center;
@@ -121,6 +130,7 @@ section.about {
   gap: 4rem;
   flex-wrap: wrap;
 }
+
 .card {
   height: 200px;
   overflow: hidden;
@@ -132,26 +142,31 @@ section.about {
   max-width: 320px;
   flex-basis: 33%;
 }
+
 .card img {
   width: 100%;
   height: 9rem;
   object-fit: cover;
   object-position: center;
 }
+
 .cardtxt {
   padding: 1rem 0rem;
 }
+
 .cardtxt h2 {
   font-variant: small-caps;
   font-size: .8rem;
   padding-bottom: .3rem;
   text-align: center;
 }
+
 .cardtxt p {
   font-size: .7rem;
   /* letter-spacing: 1px; */
   text-align: justify;
 }
+
 /************************************************
  *           Section for about Bella            *
 *************************************************/
@@ -164,30 +179,36 @@ section.about {
   padding: 3rem 4rem;
   gap: 3rem;
 }
+
 .sec .sec-image {
   flex-basis: 40%;
   max-width: 300px;
   min-width: 300px;
   overflow: hidden;
 }
+
 .sec-image img {
   width: 100%;
   object-fit: cover;
   object-position: center;
 }
+
 .sec .sectxt {
   flex-basis: 60%;
   color: white;
 }
+
 .sectxt h2 {
   font-variant: small-caps;
   padding-bottom: 1rem;
   text-align: center;
 }
+
 .sectxt p {
   font-size: .8rem;
   letter-spacing: 1px;
 }
+
 /* this is another section whhooa */
 .athsec {
   display: flex;
@@ -198,6 +219,7 @@ section.about {
   gap: 2rem;
   flex-wrap: wrap;
 }
+
 .athsec .athcard {
   flex-basis: 30%;
   min-width: 300px;
@@ -217,29 +239,35 @@ section.about {
   object-fit: cover;
   object-position: center;
 }
+
 .athcard .cardtxt h2 {
   font-size: 1rem;
 }
+
 .athcard .cardtxt p {
   font-size: .8rem;
 }
+
 .pricebtn {
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
 }
+
 .pricebtn h3 {
   letter-spacing: 1px;
 
 }
+
 .pricebtn button {
   padding: 7px;
   outline: none;
   border: none;
   background-color: var(--bgcolor);
   color: #ffffff;
-} 
+}
+
 /* footer section */
 footer {
   display: flex;
@@ -248,35 +276,42 @@ footer {
   align-items: center;
   padding: 3rem 4rem;
 }
+
 footer ol {
   display: flex;
   gap: 1rem;
 
 }
+
 ol li {
   font-variant: small-caps;
   color: #ffffff;
 }
+
 ol li a {
   color: #ffffff;
   font-variant: normal;
 }
+
 .body {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;background-color: rgba(0, 0, 0, 0.712);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.712);
   opacity: 0;
   z-index: 5;
   pointer-events: none;
   transform: scale(0);
   transition: all .6s ease;
 }
+
 .blur {
   opacity: 1;
   transform: scale(1);
 }
+
 .modal-card {
   width: 320px;
   /* height: 350px; */
@@ -291,6 +326,7 @@ ol li a {
   align-items: center;
   padding: 2.5rem 2rem;
 }
+
 .close {
   pointer-events: all;
   position: absolute;
@@ -306,6 +342,7 @@ ol li a {
   color: red;
   cursor: pointer;
 }
+
 input,
 textarea {
   pointer-events: all;
@@ -316,10 +353,12 @@ textarea {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+
 textarea {
   resize: none;
   width: 100%;
 }
+
 form button {
   background-color: var(--bgcolor);
   color: white;
@@ -330,10 +369,17 @@ form button {
   width: 100%;
   pointer-events: all;
 }
+
 @keyframes zoomin {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
+
 /************************************************
 *    Navigation Media Query for width of 700px  *
 *************************************************/
@@ -406,16 +452,19 @@ form button {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 700px) {
   .sec {
     display: flex;
     flex-direction: column;
   }
+
   .sec-image {
     max-width: 300px;
     min-width: 300px;
     height: 1.9rem;
   }
+
   .pricebtn {
     flex-direction: column;
     align-items: flex-start;
